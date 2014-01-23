@@ -1,0 +1,142 @@
+"General"
+{
+"ProjectType" = "local"
+"AutoLoadTemplate" = "%s.php;class.%s.php;"
+"IncludeDirs" = ""
+}
+"Configurations"
+{
+    "Local|PHP 5.3"
+    {
+    }
+    "Staging|PHP 5.3"
+    {
+    }
+    "Production|PHP 5.3"
+    {
+    }
+}
+"Files"
+{
+    "application"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\controllers"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\controllers\\ErrorController.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\controllers\\IndexController.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\views"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\views\\scripts"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\views\\scripts\\error"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\views\\scripts\\error\\404.phtml"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\views\\scripts\\error\\500.phtml"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\views\\scripts\\index"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\views\\scripts\\index\\welcome.phtml"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Control"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Control\\orderControl.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "DB"
+    {
+    "ProjRelPath" = "T"
+    }
+    "DB\\BaseModule.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "DB\\DBConnect.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "DB\\DBFactory.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "footer.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "head.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "html"
+    {
+    "ProjRelPath" = "T"
+    }
+    "html\\.htaccess"
+    {
+    "ProjRelPath" = "T"
+    }
+    "html\\config.ini"
+    {
+    "ProjRelPath" = "T"
+    }
+    "html\\index.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "index.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Module"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Module\\OrderInfo_class.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Utils"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Utils\\Common.php"
+    {
+    "ProjRelPath" = "T"
+    }
+}
+"ProjStartupServices"
+{
+}
+"Globals"
+{
+}
+"References"
+{
+}
