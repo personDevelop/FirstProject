@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{1863889A-00DF-4350-BA39-669CA949CB81}") = "SuWenProject", "SuWenProject\SuWenProject.phpproj", "{3ED3F448-ABE5-4F96-92F1-6836891CB20E}"
+Project("{1863889A-00DF-4350-BA39-669CA949CB81}") = "WeiTong", "SuWenProject\WeiTong.phpproj", "{3ED3F448-ABE5-4F96-92F1-6836891CB20E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
