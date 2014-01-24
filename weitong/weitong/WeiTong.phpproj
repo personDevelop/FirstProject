@@ -1,0 +1,1878 @@
+"General"
+{
+"ProjectType" = "local"
+"AutoLoadTemplate" = "%s.php;class.%s.php;"
+"IncludeDirs" = ""
+}
+"Configurations"
+{
+    "Local|PHP 5.3"
+    {
+    }
+    "Staging|PHP 5.3"
+    {
+    }
+    "Production|PHP 5.3"
+    {
+    }
+}
+"Files"
+{
+    "application"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\controllers"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\controllers\\admin"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\controllers\\orderControl.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\model"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\model\\OrderInfo_class.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\views"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\views\\admin"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\views\\web"
+    {
+    "ProjRelPath" = "T"
+    }
+    "DB"
+    {
+    "ProjRelPath" = "T"
+    }
+    "DB\\BaseModule.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "DB\\DBConnect.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "DB\\DBFactory.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "footer.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "global"
+    {
+    "ProjRelPath" = "T"
+    }
+    "global\\Common.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "head.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "index.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "index1.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.cs-CZ.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.de-DE.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.en-CA.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.en-US.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.fr-FR.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.he-IL.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.hr-HR.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.hu-HU.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.it-IT.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.ja-JP.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.lt.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.ru-RU.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.culture.sa-IN.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\globalize.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\globalization\\ReadMe.txt"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\jqx-all.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\backgroundTop.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\backImage.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\bg_black.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\bg_black_horizontal.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\bg_blackhover.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\bg_blackhover_horizontal.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\bg_blackpressed.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\bg_blackpressed_horizontal.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\bg_blueenergy.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\bg_darkblue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\bg_darkbluehover.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\bg_darkbluepressed.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\black_gradient.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\blackbackground.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\check_black.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\check_blue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\check_blue_indeterminate.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\check_disabled.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\check_indeterminate_black.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\check_indeterminate_disabled.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\check_indeterminate_white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\check_lightblue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\check_lightblue_indeterminate.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\check_white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\close.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\close_blue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\close_white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\colorpicker"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\colorpicker\\bar-hue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\colorpicker\\bar-saturation.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\colorpicker\\map-hue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\colorpicker\\map-saturation-overlay.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\colorpicker\\map-saturation.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\colorpicker\\ReadMe.txt"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\crosshair-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\crosshair.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ReadMe.txt"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-bg_flat_30_cccccc_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-bg_flat_50_5c5c5c_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-bg_glass_20_555555_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-bg_glass_40_0078a3_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-bg_glass_40_ffc73d_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-bg_gloss-wave_25_333333_500x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-bg_highlight-soft_80_eeeeee_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-bg_inset-soft_25_000000_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-bg_inset-soft_30_f58400_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-icons_222222_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-icons_4b8e0b_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-icons_a83300_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-icons_cccccc_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkness\\ui-icons_ffffff_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\darkred_gradient.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\drag.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\dragcancel.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\filter.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-cancel-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-cancel.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-delete - Copy.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-delete-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-delete.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-down-blue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-down-transparent.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-down-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-down.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-edit-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-edit.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-first-blue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-first-transparent.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-first-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-first.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-last-blue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-last-transparent.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-last-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-last.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-left-blue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-left-transparent.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-left-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-left.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-right-blue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-right-transparent.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-right-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-right.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-save-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-save.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-showpassword-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-showpassword.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-up-blue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-up-transparent.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-up-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\icon-up.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ReadMe.txt"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-bg_diagonals-small_0_aaaaaa_40x40.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-bg_diagonals-thick_15_444444_40x40.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-bg_diagonals-thick_95_ffdc2e_40x40.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-bg_glass_55_fbf5d0_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-bg_highlight-hard_30_285c00_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-bg_highlight-soft_33_3a8104_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-bg_highlight-soft_50_4eb305_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-bg_highlight-soft_60_4ca20b_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-bg_inset-soft_10_285c00_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-icons_4eb305_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-icons_72b42d_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-icons_cd0a0a_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\le-frog\\ui-icons_ffffff_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\icon-first.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\icon-last.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ReadMe.txt"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-bg_diagonals-thick_18_b81900_40x40.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-bg_diagonals-thick_20_666666_40x40.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-bg_flat_10_000000_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-bg_glass_100_f6f6f6_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-bg_glass_100_fdf5ce_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-bg_glass_65_ffffff_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-bg_gloss-wave_35_f6a828_500x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-bg_highlight-soft_100_eeeeee_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-bg_highlight-soft_75_ffe45c_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-icons_222222_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-icons_228ef1_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-icons_ef8c08_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-icons_ffd27a_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\lightness\\ui-icons_ffffff_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\loader.gif"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\menubutton.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-down-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-down.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-first-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-first.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-last-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-last.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-left-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-left.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-right - Copy.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-right-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-right.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-up-white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\metro-icon-up.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\multi-arrow.gif"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\office-icon-down.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\office-icon-left.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\office-icon-right.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\office-icon-up.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ReadMe.txt"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-bg_flat_0_aaaaaa_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-bg_flat_0_eeeeee_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-bg_flat_55_c0402a_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-bg_flat_55_eeeeee_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-bg_glass_100_f8f8f8_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-bg_glass_35_dddddd_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-bg_glass_60_eeeeee_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-bg_inset-hard_75_999999_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-bg_inset-soft_50_c9c9c9_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-icons_3383bb_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-icons_454545_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-icons_70b2e1_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-icons_999999_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\overcast\\ui-icons_fbc856_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\plus.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\plus_white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\pointer.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\rangebar_classic.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\rangebar_darkblue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\rangebar_shinyblack.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\rangebar_summer.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\red_arrow_down.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\red_arrow_up.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\red_gradient.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\icon-first.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\icon-last.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ReadMe.txt"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-bg_flat_0_aaaaaa_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-bg_flat_55_fbec88_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-bg_glass_75_d0e5f5_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-bg_glass_85_dfeffc_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-bg_glass_95_fef1ec_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-bg_gloss-wave_55_5c9ccc_500x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-bg_inset-hard_100_f5f8f9_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-bg_inset-hard_100_fcfdfd_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-icons_217bc0_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-icons_2e83ff_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-icons_469bdd_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-icons_6da8d5_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-icons_cd0a0a_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-icons_d8e7f3_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\redmond\\ui-icons_f9bd01_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\roundbg_check_black.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\roundbg_check_disabled.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\roundbg_check_indeterminate.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\roundbg_check_white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\roundbg_classic_hover.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\roundbg_classic_normal.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\roundbg_disabled.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\search.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\search_white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ReadMe.txt"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-bg_flat_0_aaaaaa_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-bg_flat_75_ffffff_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-bg_glass_55_fbf9ee_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-bg_glass_65_ffffff_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-bg_glass_75_dadada_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-bg_glass_75_e6e6e6_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-bg_glass_95_fef1ec_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-bg_highlight-soft_75_cccccc_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-icons_222222_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-icons_2e83ff_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-icons_454545_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-icons_888888_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\smoothness\\ui-icons_cd0a0a_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sortasc.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sortascbutton.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sortdesc.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sortdescbutton.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sortremove.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\star.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\star_disabled.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\star_hover.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ReadMe.txt"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-bg_flat_55_999999_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-bg_flat_75_aaaaaa_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-bg_glass_45_0078ae_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-bg_glass_55_f8da4e_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-bg_glass_75_79c9ec_1x400.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-bg_gloss-wave_45_e14f1c_500x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-bg_gloss-wave_50_6eac2c_500x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-bg_gloss-wave_75_2191c0_500x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-bg_inset-hard_100_fcfdfd_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-icons_0078ae_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-icons_056b93_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-icons_d8e7f3_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-icons_e0fdff_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-icons_f5e175_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-icons_f7a50d_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\start\\ui-icons_fcd113_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ReadMe.txt"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-bg_diagonals-medium_20_d34d17_40x40.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-bg_flat_30_cccccc_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-bg_flat_50_5c5c5c_40x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-bg_gloss-wave_45_817865_500x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-bg_gloss-wave_60_fece2f_500x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-bg_gloss-wave_70_ffdd57_500x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-bg_gloss-wave_90_fff9e5_500x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-bg_highlight-soft_100_feeebd_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-bg_inset-soft_30_ffffff_1x100.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-icons_3d3d3d_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-icons_bd7b00_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-icons_d19405_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-icons_eb990f_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-icons_ed9f26_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-icons_fadc7a_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\sunny\\ui-icons_ffe180_256x240.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\tick.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\track_classic.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\track_darkblue.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\track_shinyblack.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\track_summer.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\wp_check_indeterminate_white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\images\\wp_check_white.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.android.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.arctic.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.base.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.black.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.blackberry.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.bootstrap.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.classic.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.darkblue.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.energyblue.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.fresh.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.highcontrast.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.metro.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.metrodark.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.mobile.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.office.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.orange.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.shinyblack.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.summer.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.ui-darkness.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.ui-le-frog.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.ui-lightness.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.ui-overcast.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.ui-redmond.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.ui-smoothness.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.ui-start.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.ui-sunny.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.web.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\styles\\jqx.windowsphone.css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\debug.tpl"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\block.textformat.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.counter.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.cycle.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.fetch.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.html_checkboxes.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.html_image.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.html_options.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.html_radios.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.html_select_date.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.html_select_time.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.html_table.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.mailto.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\function.math.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifier.capitalize.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifier.date_format.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifier.debug_print_var.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifier.escape.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifier.regex_replace.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifier.replace.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifier.spacify.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifier.truncate.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.cat.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.count_characters.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.count_paragraphs.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.count_sentences.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.count_words.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.default.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.escape.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.from_charset.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.indent.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.lower.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.noprint.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.string_format.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.strip.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.strip_tags.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.to_charset.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.unescape.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.upper.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\modifiercompiler.wordwrap.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\outputfilter.trimwhitespace.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\shared.escape_special_chars.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\shared.literal_compiler_param.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\shared.make_timestamp.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\shared.mb_str_replace.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\shared.mb_unicode.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\shared.mb_wordwrap.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\plugins\\variablefilter.htmlspecialchars.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\Smarty.class.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\SmartyBC.class.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_cacheresource.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_cacheresource_custom.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_cacheresource_keyvaluestore.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_config_source.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_cacheresource_file.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_append.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_assign.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_block.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_break.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_call.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_capture.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_config_load.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_continue.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_debug.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_eval.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_extends.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_for.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_foreach.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_function.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_if.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_include.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_include_php.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_insert.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_ldelim.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_nocache.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_private_block_plugin.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_private_function_plugin.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_private_modifier.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_private_object_block_function.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_private_object_function.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_private_print_expression.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_private_registered_block.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_private_registered_function.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_private_special_variable.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_rdelim.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_section.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_setfilter.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compile_while.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_compilebase.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_config.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_config_file_compiler.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_configfilelexer.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_configfileparser.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_data.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_debug.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_filter_handler.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_function_call_handler.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_get_include_path.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_nocache_insert.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_parsetree.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_resource_eval.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_resource_extends.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_resource_file.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_resource_php.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_resource_registered.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_resource_stream.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_resource_string.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_smartytemplatecompiler.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_template.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_templatebase.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_templatecompilerbase.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_templatelexer.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_templateparser.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_utility.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_internal_write_file.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_resource.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_resource_custom.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_resource_recompiled.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_resource_uncompiled.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\sysplugins\\smarty_security.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\templates"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\templates\\cache"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\templates\\config"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\templates\\templates"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\templates\\templates\\admin"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\templates\\templates\\index.tpl"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\templates\\templates\\web"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Smarty\\templates\\templates_c"
+    {
+    "ProjRelPath" = "T"
+    }
+}
+"ProjStartupServices"
+{
+}
+"Globals"
+{
+}
+"References"
+{
+}
