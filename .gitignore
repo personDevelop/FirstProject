@@ -1,0 +1,6 @@
+Thunbs.db
+*.obj
+*.exe
+obj/
+[Rr]elease*/
+_ReSharper*/
