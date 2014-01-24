@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+    <title>无缝滑动的图片轮播</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--demo展示所用css，不用关心 begin-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <!--demo展示所用css end-->
+    <!--组件依赖css begin-->
+    <link rel="stylesheet" type="text/css" href="css/widget/slider/slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/widget/slider/slider.default.css" /> <!--皮肤文件，若不使用该皮肤，可以不加载-->
+    <!--组件依赖css end-->
+    <!--组件依赖js begin-->
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/extend/touch.js"></script>
+    <script type="text/javascript" src="js/extend/matchMedia.js"></script>
+    <script type="text/javascript" src="js/extend/event.ortchange.js"></script>
+    <script type="text/javascript" src="js/extend/parseTpl.js"></script>
+    <script type="text/javascript" src="js/core/gmu.js"></script>
+    <script type="text/javascript" src="js/core/event.js"></script>
+    <script type="text/javascript" src="js/core/widget.js"></script>
+    <script type="text/javascript" src="js/widget/slider/slider.js"></script>
+    <script type="text/javascript" src="js/widget/slider/arrow.js"></script>
+    <script type="text/javascript" src="js/widget/slider/dots.js"></script>
+    <script type="text/javascript" src="js/widget/slider/$touch.js"></script>
+    <!--组件依赖js end-->
+</head>
+<style>
+body{background:#e2e6ef;padding-left:5px;padding-right:5px;font-family: "微软雅黑",helvetica,arial;}
+.home_sec {
+background: #f6f9fe;
+border: 1px #d5dbe8 solid;
+
+box-shadow: inset 1px 0 0 #fdfdff,inset 0 1px 0 #fdfdff,inset -1px 0 0 #fdfdff,inset 0 -1px 0 #fdfdff;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+.home_sec li {
+float: left;
+width: 25%;
+-webkit-box-sizing: border-box;
+text-align: center;
+margin: 0 0 10px;
+}
+ul, li, ol {
+list-style: none;
+}
+
+a {
+color: #333;
+text-decoration: none;
+}
+.home_sec li a {
+background-image: url(images/tools_icons_new.png);
+background-repeat: no-repeat;
+background-size: 30px auto;
+font-size: .8em;
+display: block;
+width: 99%;
+max-width: 68px;
+height: 26px;
+overflow: hidden;
+padding: 1px;
+margin: 0 auto;
+background-color: #FFF;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+border: #e6e9f0 solid 1px;
+padding-top: 38px;
+}
+
+.iclk_2 {
+background-position: center -70px;
+}
+.tools_title {
+margin: 0 .5em;
+height: 38px;
+line-height: 38px;
+padding-left: 14px;
+border-bottom: #e1e5ef solid 1px;
+color: #606060;
+box-shadow: 0 1px 0 #FFF;
+position: relative;
+}
+.tools_title:before {
+position: absolute;
+width: 2px;
+height: 13px;
+overflow: hidden;
+content: "";
+background: #464e55;
+left: 6px;
+top: 12px;
+}
+.copyright {
+margin-top: .3em;
+font-size: .85em;
+}
+#footer {
+text-align: center;
+padding: 0 0 .5em;
+color: #666;
+}
+</style>
+<body>
+
+
+<div class='home_sec' style='padding:5px;margin-top:5px;'>
+    <div id="slider">
+        <div>
+            <a href="http://www.baidu.com/"><img src="images/1.jpg"></a>
+            <p>1,让Coron的太阳把自己晒黑—小天</p>
+        </div>
+        <div>
+            <a href="http://www.baidu.com/"><img src="images/2.jpg"></a>
+            <p>2,让Coron的太阳把自己晒黑—小天</p>
+        </div>
+        <div>
+            <a href="http://www.baidu.com/"><img src="images/3.jpg"></a>
+            <p>3,让Coron的太阳把自己晒黑—小天</p>
+        </div>
+        <div>
+            <a href="http://www.baidu.com/"><img src="images/4.jpg"></a>
+            <p>4,让Coron的太阳把自己晒黑—小天</p>
+        </div>
+    </div>
+</div>
+<div class='home_sec' style='padding:5px;height:147px;margin-top:5px;'>
+
+    <li>
+        <a href="../wap.12306.cn/mormhweb/default.htm" class="iclk_2" stat="82121">养生常识</a>
+    </li>
+     <li>
+        <a href="../wap.12306.cn/mormhweb/default.htm" class="iclk_2" stat="82121">预约体验</a>
+    </li>
+     <li>
+        <a href="../wap.12306.cn/mormhweb/default.htm" class="iclk_2" stat="82121">养生项目</a>
+    </li>
+     <li>
+        <a href="../wap.12306.cn/mormhweb/default.htm" class="iclk_2" stat="82121">调理案例</a>
+    </li>
+     <li>
+        <a href="../wap.12306.cn/mormhweb/default.htm" class="iclk_2" stat="82121">最新活动 </a>
+    </li>
+     <li>
+        <a href="../wap.12306.cn/mormhweb/default.htm" class="iclk_2" stat="82121">微团购</a>
+    </li>
+     <li>
+        <a href="../wap.12306.cn/mormhweb/default.htm" class="iclk_2" stat="82121">会员卡</a>
+    </li>
+    <li>
+        <a href="../wap.12306.cn/mormhweb/default.htm" class="iclk_2" stat="82121">微商城</a>
+    </li>
+    
+</div>
+<div class='home_sec' style='padding:5px;margin-top:5px;'>
+    <div class="tools_title"><strong style='color:green;'>活动</strong></div>
+
+    <div style="height:100px;padding: 5px 17px;">
+       
+         <img src="images/1.jpg" style='width:100%;height:100%;'>
+    </div>
+    <div style="">
+        <a href="#" style='padding: 0px 17px;font-size: 14px;'>阿萨德发生的发生地方</a>
+
+    </div>
+</div>
+<div class='home_sec' style='padding:5px;margin-top:5px;background:white;'>
+    <div class="tools_title"><strong style='color:green;'>关于我们</strong></div>
+
+    <div style='margin-left:10px;margin-right:10px;font-size:12px;margin-top:10px;margin-bottom:10px;'>
+        阿斯顿发送到发送到发送到发送到阿达撒飞洒地方发送到发送到阿达撒飞洒地方发送到发送到阿达撒飞洒地方
+    </div>
+</div>
+<div class='home_sec' style='padding:5px;height:37px;margin-top:5px;background: rgb(49, 158, 49);color: white;border: 1px solid rgb(126, 126, 126);font-size: 20px;text-align: center;line-height: 36px;'>
+    0531-85108878
+</div>
+<div id="footer">   <p class="copyright">版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备11024344号-21</p> </div>
+<script>
+    //创建slider组件
+    $('#slider').slider({loop:true});
+</script>
+</body>
+</html>
