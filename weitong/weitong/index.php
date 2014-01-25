@@ -1,7 +1,7 @@
 <?php   
 //引用类文件   
 require 'smarty/Smarty.class.php';   
-require 'Utils/Common.php';
+require 'global/Common.php';
 $smarty = new Smarty;   
 
 //设置各个目录的路径，这里是安装的重点   

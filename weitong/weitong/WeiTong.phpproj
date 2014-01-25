@@ -54,19 +54,19 @@
     {
     "ProjRelPath" = "T"
     }
-    "DB"
+    "db"
     {
     "ProjRelPath" = "T"
     }
-    "DB\\BaseModule.php"
+    "db\\BaseModule.php"
     {
     "ProjRelPath" = "T"
     }
-    "DB\\DBConnect.php"
+    "db\\DBConnect.php"
     {
     "ProjRelPath" = "T"
     }
-    "DB\\DBFactory.php"
+    "db\\DBFactory.php"
     {
     "ProjRelPath" = "T"
     }
@@ -162,7 +162,43 @@
     {
     "ProjRelPath" = "T"
     }
+    "Script\\IEPercent.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\img"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\img\\folder.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\img\\folderIcon.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\img\\folderOpen.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\jquery-1.10.2.min.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\jquery.cookie.js"
+    {
+    "ProjRelPath" = "T"
+    }
     "Script\\jqx-all.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\jqxcore.js"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\Skin.js"
     {
     "ProjRelPath" = "T"
     }
@@ -1862,7 +1898,23 @@
     {
     "ProjRelPath" = "T"
     }
-    "Smarty\\templates\\templates_c"
+    "view"
+    {
+    "ProjRelPath" = "T"
+    }
+    "view\\admin"
+    {
+    "ProjRelPath" = "T"
+    }
+    "view\\admin\\main.html"
+    {
+    "ProjRelPath" = "T"
+    }
+    "view\\HTML Page1.html"
+    {
+    "ProjRelPath" = "T"
+    }
+    "view\\web"
     {
     "ProjRelPath" = "T"
     }
