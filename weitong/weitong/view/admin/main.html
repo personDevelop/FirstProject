@@ -1,30 +1,52 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>微通管理控制中心</title>
     <link rel="stylesheet" id="basecss" href="../../Script/styles/jqx.base.css" type="text/css" />
     <script type="text/javascript" src="../../Script/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="../../Script/jquery.cookie.js"></script>
     <script type="text/javascript" src="../../Script/jqxcore.js"></script>
     <script type="text/javascript" src="../../Script/jqx-all.js"></script>
+    <script type="text/javascript" src="JScript1.js"></script>
     <script type="text/javascript" src="../../Script/Skin.js"></script>
     <script type="text/javascript" src="../../Script/IEPercent.js"></script>
     <script type="text/javascript">
+        var content = '<iframe frameborder="0"  style="width:100%;height:98%;" scrolling="no" src="';
         $(document).ready(function () {
             initthemes();
             $('#splitContainer').jqxSplitter({ theme: $.jqx.theme, height: getPercent("100%", $(document), false), width: '100%', orientation: 'horizontal', panels: [{ size: '10%' }, { size: '80%'}] });
             $('#splitter').jqxSplitter({ theme: $.jqx.theme, width: '100%', panels: [{ size: 200 }, { size: 300}] });
             $('#workbach').jqxSplitter({ theme: $.jqx.theme, width: '100%', orientation: 'horizontal', panels: [{ size: '95%', collapsible: false }, { size: '5%', collapsible: true}] });
             $("#jqxMenu").jqxMenu({ width: '670', height: '30px' });
-            $("#tabswidget").jqxTabs({ theme: $.jqx.theme, height: '100%', width: '100%' });
+            //            $("#jqxWidget").jqxPanel({ rtl: true, height: '100%', width: '100%' });
+            $("#tabswidget").jqxTabs({ theme: $.jqx.theme, height: '100%', width: '100%', showCloseButtons: true }).on('removed', function (event) {
+                url = "main.html";
+                hasOpendPage.pop(url);
+            }).on('add', function (d) {
+                //            $("#tabswidget").find(".jqx-rc-t").height("18");
+                //            jqx-reset jqx-disableselect jqx-tabs-title jqx-tabs-title-arctic jqx-item jqx-item-arctic jqx-rc-t jqx-rc-t-arctic
+                //                d.owner._titleList[d.args.item].height("18");
+
+
+            });
             $('#jqxTree').jqxTree({ height: '100%', width: '100%' });
             $('#jqxTree').on('select', function (event) {
-
+                addMainTab();
             });
 
         });
+        var hasOpendPage = [];
+        function addMainTab(url) {
+            url = "ParameterInfoPage.html";
+            //            if ( $.inArray(url, hasOpendPage)==-1) {
+            hasOpendPage.push(url);
+            $('#tabswidget').jqxTabs('addLast', '系统参数设置', content + url + '"></iframe> ');
+            //            }
+
+
+        }
     </script>
 </head>
 <body class='ui-sunny'>
@@ -34,20 +56,20 @@
                 <div>
                     <div id='logo' style="width: 100; height: 100">
                         Logo
+                        <div id='jqxMenu'>
+                            <ul>
+                                <li><a href="#Home">系统</a></li>
+                                <li url="sd">公众平台</li>
+                                <li url="sd">信息</li>
+                                <li>栏目</li>
+                                <li>用户</li>
+                                <li>商城</li>
+                                <li>其他</li>
+                            </ul>
+                        </div>
                         <div id="themeComboBox" style="float: right">
                         </div>
                     </div>
-                </div>
-                <div id='jqxMenu'>
-                    <ul>
-                        <li><a href="#Home">系统</a></li>
-                        <li>公众平台</li>
-                        <li>信息</li>
-                        <li>栏目</li>
-                        <li>用户</li>
-                        <li>商城</li>
-                        <li>其他</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -127,6 +149,9 @@
                                             <li id="Li11">
                                                 <img style='float: left; margin-right: 5px;' src='../../Script/img/folder.png' /><span
                                                     item-title="true">公众号助手</span> </li>
+                                            <li id="Li12" url="panaral.php">
+                                                <img style='float: left; margin-right: 5px;' src='../../Script/img/folder.png' /><span
+                                                    item-title="true">系统变量</span> </li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -137,16 +162,18 @@
                 <div>
                     <div id="workbach">
                         <div>
-                            <div class="jqx-hideborder jqx-hidescrollbars" id="tabswidget">
+                            <!-- <div id='jqxWidget'>>-->
+                            <div id="tabswidget">
                                 <ul>
                                     <li style="margin-left: 30px;">主页</li>
                                     <li>个人信息</li>
                                 </ul>
                                 <div>
-                                    Content 1</div>
+                                    ``2`q2q2 Content 1</div>
                                 <div>
                                     Content 2</div>
                             </div>
+                            <!--  </div>-->
                         </div>
                         <div id="footer">
                             版权2014

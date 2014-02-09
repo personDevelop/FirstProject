@@ -25,11 +25,12 @@ var themes = [
         { label: 'Le Frog', group: 'UI Compatible', value: 'ui-le-frog' }
     ];
 function initthemes() {
+    
     var loadedThemes = [0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
 
     var me = this;
     //设置默认皮肤， 从cookie取值
-    selectedTheme = $.cookie('shinTheme');
+    selectedTheme = $.jqx.cookie.cookie('shinTheme');
     if (!selectedTheme) {
         selectedTheme = 'ui-sunny'; 
     }
@@ -53,7 +54,7 @@ function initthemes() {
             var loaded = loadedThemes[selectedIndex] != -1;
             loadedThemes[selectedIndex] = selectedIndex;
             selectedTheme = themes[selectedIndex].value;
-            createLinkSkin(selectedTheme);
+            $.jqx.cookie.cookie('shinTheme', selectedTheme); 
             location.reload();
         }, 5);
     });
@@ -70,12 +71,23 @@ function createLinkSkin(skinName) {
         var searchchar = "styles/jqx.";
         var start = skinlink.indexOf(searchchar);
         var newskinlink = skinlink.substring(0, start + searchchar.length);
-        newskinlink += skinName + ".css"; 
-        $("#basecss").append("<link rel='stylesheet'   href='" + newskinlink + "' type='text/css' />") 
-        $.data(document.body, 'theme', skinName);
-        $.jqx.theme = skinName;
-
-        $.cookie('shinTheme', skinName);
+        newskinlink += skinName + ".css";
+        $("#basecss").after("<link rel='stylesheet'   href='" + newskinlink + "' type='text/css' />") 
+       
+        $.jqx.theme = skinName; 
+        
     }
 
 }
+
+function SetTheme() {
+
+    $.jqx.theme = $.jqx.cookie.cookie('shinTheme');
+    if (!$.jqx.theme) {
+        $.jqx.theme = 'ui-sunny';
+        $.jqx.cookie.cookie('shinTheme', $.jqx.theme); 
+    }
+       createLinkSkin($.jqx.theme);
+    }
+
+ 

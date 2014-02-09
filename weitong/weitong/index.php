@@ -1,26 +1,18 @@
-<?php   
-//ÒýÓÃÀàÎÄ¼þ   
-require 'smarty/Smarty.class.php';   
-require 'global/Common.php';
-$smarty = new Smarty;   
+ï»¿<?php  
+header("Content-type: text/html; charset=utf-8");
 
-//ÉèÖÃ¸÷¸öÄ¿Â¼µÄÂ·¾¶£¬ÕâÀïÊÇ°²×°µÄÖØµã   
-$smarty->template_dir = "smarty/templates/templates";   
+// $Para =$_POST["Code"];
+////$Para = iconv("utf-8","gbk",$Para);
+//$Para =iconv("UTF-8","GB2312//IGNORE",$Para);
 
-$smarty->compile_dir = "smarty/templates/templates_c";   
+//$encode =mb_detect_encoding ( $Para, array ("ASCII", "UTF-8", "GB2312", "GBK", "BIG5" ) );
 
-$smarty->config_dir = "smarty/templates/config";   
-$smarty->cache_dir = "smarty/templates/cache";    
+//å¼•ç”¨ç±»æ–‡ä»¶  
+define('SITE_PATH',str_replace('','/',dirname(__FILE__)));//å®šä¹‰ç³»ç»Ÿç›®å½• 
+define('contro_PATH',SITE_PATH."\\application\\controllers\\");//å®šä¹‰ç³»ç»Ÿç›®å½• 
+define('Model_PATH',SITE_PATH."\\application\\model\\");//å®šä¹‰ç³»ç»Ÿç›®å½• 
 
+require_once("application/controllers/BaseController.php");
 
-//smartyÄ£°åÓÐ¸ßËÙ»º´æµÄ¹¦ÄÜ£¬Èç¹ûÕâÀïÊÇtrueµÄ»°¼´´ò¿ªcaching£¬µ«ÊÇ»áÔì³ÉÍøÒ³²»Á¢¼´¸üÐÂµÄÎÊÌâ£¬µ±È»Ò²¿ÉÒÔÍ¨¹ýÆäËûµÄ°ì·¨½â¾ö   
-$smarty->caching = false;   
-
-$hello = "Hello World!";   
-//¸³Öµ   
-$smarty->assign("hello",$hello);   
-
-//ÒýÓÃÄ£°åÎÄ¼þ   
-$smarty->display('index.tpl');   
-
+BaseController::RunApp();
 ?>

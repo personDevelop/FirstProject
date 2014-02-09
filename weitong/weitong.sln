@@ -14,8 +14,8 @@ Global
 		{0B7178D8-0DC7-4AFD-9B8A-25C0B2BD422F}.Local|PHP 5.3.Deploy.0 = Local|PHP 5.3
 		{0B7178D8-0DC7-4AFD-9B8A-25C0B2BD422F}.Production|PHP 5.3.ActiveCfg = Production|PHP 5.3
 		{0B7178D8-0DC7-4AFD-9B8A-25C0B2BD422F}.Production|PHP 5.3.Deploy.0 = Production|PHP 5.3
-		{0B7178D8-0DC7-4AFD-9B8A-25C0B2BD422F}.Staging|PHP 5.3.ActiveCfg = Staging|PHP 5.3
-		{0B7178D8-0DC7-4AFD-9B8A-25C0B2BD422F}.Staging|PHP 5.3.Deploy.0 = Staging|PHP 5.3
+		{0B7178D8-0DC7-4AFD-9B8A-25C0B2BD422F}.Staging|PHP 5.3.ActiveCfg = Local|PHP 5.3
+		{0B7178D8-0DC7-4AFD-9B8A-25C0B2BD422F}.Staging|PHP 5.3.Deploy.0 = Local|PHP 5.3
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

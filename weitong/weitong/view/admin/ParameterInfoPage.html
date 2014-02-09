@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>系统参数设置</title>
+    <link rel="stylesheet" id="basecss" href="../../Script/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../Script/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../../Script/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../../Script/jqxcore.js"></script>
+    <script type="text/javascript" src="../../Script/jqx-all.js"></script>
+    <script type="text/javascript" src="JScript1.js"></script>
+    <script type="text/javascript" src="../../Script/Skin.js"></script>
+    <script type="text/javascript" src="../../Script/basejs.js"></script>
+    <script type="text/javascript" src="../../Script/IEPercent.js"></script>
+    <script type="text/javascript">
+        SetTheme();//设置皮肤
+        var isAddRoot = true;
+        var tree;
+        var _RecordStatus = 0;
+        //空对象
+        var currentObj = { "Code": "", "Name": "",
+            "Value": "", "IsSystem": true,
+            "IsEdit": true, "OrderNo": 1, "Note": ""
+        };
+        $(document).ready(function () {
+            // Create jqxTree        
+            tree = $('#jqxTree');
+            var source = null;
+            $.ajax({
+                async: false,
+                url: "../../index.php?c=ParameterInfoControl&m=QueryRoot",
+                success: function (data, status, xhr) {
+                    source = jQuery.parseJSON(data);
+                },
+                error: function (d) {
+                    alert(d);
+                }
+            });
+
+
+            tree.jqxTree({ source: source, height: '98%', width: '100%' }).on('expand', function (event) {
+
+                var hasLoad = event.args.element.value;
+                if (hasLoad == 0) {
+                    var id = event.args.element.id;
+                    event.args.element.value = 1;
+
+                    var $element = $(event.args.element);
+                    var loaderItem = tree.jqxTree('getItem', $element.find('ul:first').children()[0]);
+                    $.ajax({
+                        url: "../../index.php?c=ParameterInfoControl&m=Query&p=" + id,
+                        success: function (data, status, xhr) {
+                            if (data != "0") {
+                                var items = jQuery.parseJSON(data);
+                                tree.jqxTree('addTo', items, $element[0]);
+                            }
+                            tree.jqxTree('removeItem', loaderItem.element);
+                        }
+                    });
+                }
+
+            }).on('select', function (event) {
+                var args = event.args;
+                var item = tree.jqxTree('getItem', args.element);
+
+                $.ajax({
+                    async: false,
+                    url: "../../index.php?c=ParameterInfoControl&m=FindOne&p=" + item.id,
+                    success: function (data, status, xhr) {
+                        source = jQuery.parseJSON(data);
+                        loadData(source[0]);
+                        _RecordStatus = 1;
+                    },
+                    error: function (d) {
+                        alert(d);
+                    }
+                });
+
+            });
+            $('#splitContainer').jqxSplitter({ theme: $.jqx.theme, height: getPercent("98%", $(document), false),
+                width: '100%', panels: [{ size: '40%' }, { size: '50%'}]
+            });
+            $('#IsCanHasLeaf,#IsSystem,#IsEdit,#IsDelete,#IsEnable').jqxCheckBox();
+            $("#Note").jqxInput({width:'200px'});
+            $("#jqxWidget").jqxButtonGroup({ mode: 'default' }).on('buttonclick', function (event) {
+                var clickedButton = event.args.button[0].id;
+
+                switch (clickedButton) {
+                    case "add":
+
+                        $("#parentName").text("根节点");
+                        $("#ParentID").val("");
+                        loadData(currentObj);
+                        _RecordStatus = 0;
+                        isAddRoot = true;
+                        break;
+                    case "addchild":
+                        var selectItem = tree.jqxTree("getSelectedItem");
+                        if (!selectItem) {
+                            Msg.ShowError("请选择父节点");
+                            return;
+                        }
+                        loadData(currentObj);
+                        $("#ParentID").val(selectItem.id);
+                        $("#parentName").text(selectItem.label);
+                        isAddRoot = false;
+                        _RecordStatus = 0;
+                        break;
+                    case "save":
+                        break;
+                    case "deletepara":
+                        var selectItem = tree.jqxTree("getSelectedItem");
+                        if (!selectItem) {
+                            Msg.ShowError("请选择要删除的节点");
+                            return;
+                        }
+                        if (!selectItem.subtreeElement.innerHTML) {
+
+                        } else {
+                            Msg.ShowError("该节点下还有子节点，不能删除！");
+                            return;
+                        }
+                        Msg.Query("确定要删除【" + selectItem.label + "】节点？", function () {
+
+                            $.ajax({
+                                async: false,
+                                url: "../../index.php?c=ParameterInfoControl&m=Delete&p=" + selectItem.id,
+                                success: function (d, status, xhr) {
+                                    if (d == 1) {
+                                        tree.jqxTree('removeItem', selectItem);
+                                        $("#parentName").text("根节点");
+                                        loadData(currentObj);
+                                        _RecordStatus = 0;
+                                        isAddRoot = true;
+                                        Msg.ShowSuccess("删除成功！");
+                                    } else {
+                                        Msg.ShowError(d + status);
+                                    }
+
+                                }, error: function (dd) {
+                                    Msg.ShowError(dd);
+                                }
+                            });
+
+
+
+
+                        });
+
+
+                        break;
+
+                }
+            });
+            $("#btnSave").jqxButton({ width: '150' }).on('click', function () {
+                var result = $('#testForm').jqxValidator('validate');
+                if (!result) {
+                    return;
+                }
+                var dataf = SetData();
+                $.ajax({
+                    url: "../../index.php?c=ParameterInfoControl&m=Save",
+                    data: dataf, type: "POST",
+                    success: function (d) {
+                        var item = jQuery.parseJSON(d);
+                        if (_RecordStatus == 0) {
+
+                            if (isAddRoot) {
+                                tree.jqxTree('addTo', item[0]);
+                            } else {
+
+                                var selectItem = tree.jqxTree("getSelectedItem");
+                                tree.jqxTree('addTo', item[0], selectItem);
+
+                            }
+                            tree.jqxTree('selectItem', $("#" + item[0].id)[0]);
+                            _RecordStatus = 1;
+
+                        } else {
+                            var selectItem = tree.jqxTree("getSelectedItem");
+                            tree.jqxTree('updateItem', selectItem, item[0]);
+
+                        }
+                    }, error: function (dd) {
+                        alert(dd);
+                    }
+                });
+            });
+            $("#register").jqxExpander({ toggleMode: 'none', height: 'auto', width: '100%', showArrow: false, theme: $.jqx.theme });
+            $('#testForm').jqxValidator({ rules: [{ input: '#Code', message: '编码不能为空！', action: 'keyup, blur', rule: 'required' },
+                                         { input: '#Name', message: '名称不能为空', action: 'keyup, blur', rule: 'required'}]
+            });
+        });
+
+        function loadData(d) {
+            if (!d.ParentID) {
+                $("#parentName").text("根节点");
+            }
+            else {
+                $("#ParentID").val(d.ParentID);
+                var selectItem = tree.jqxTree("getSelectedItem");
+                var parentItem = tree.jqxTree("_parentItem", selectItem);
+                $("#parentName").text(parentItem.label);
+            }
+            $("#ID").val(d.ID);
+            $("#Code").val(d.Code);
+            $("#Name").val(d.Name);
+            $("#Value").val(d.Value);
+            $("#IsSystem").val(d.IsSystem);
+            $("#IsEdit").val(d.IsEdit);
+            $("#OrderNo").val(d.OrderNo);
+            $("#Note").val(d.Note);
+        }
+        function SetData() {
+            dataf = { "ID": $("#ID").val(), "ParentID": $("#ParentID").val(),
+                "Code": $("#Code").val(), "Name": $("#Name").val(),
+                "Value": $("#Value").val(), "IsSystem": $("#IsSystem").val(),
+                "IsDelete": $("#IsDelete").val(),
+                "IsEnable": $("#IsEnable").val(),
+                "IsCanHasLeaf": $("#IsCanHasLeaf").val(),
+                "IsEdit": $("#IsEdit").val(), "OrderNo": $("#OrderNo").val(), "Note": $("#Note").val(),
+                "_RecordStatus": _RecordStatus
+            };
+            return dataf;
+        }
+    </script>
+    <style type="text/css">
+        .register-table
+        {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .register-table td, .register-table tr
+        {
+            margin: 0px;
+            padding: 2px;
+            border-spacing: 0px;
+            border-collapse: collapse;
+            font-family: Verdana;
+            font-size: 12px;
+        }
+        h3
+        {
+            display: inline-block;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body class='ui-sunny'>
+    <div id="splitContainer">
+        <div>
+            <div name="tree" id='jqxTree'>
+            </div>
+        </div>
+        <div>
+            <div style="padding: 30px">
+                <div id='jqxWidget'>
+                    <button style="padding: 4px 16px;" id="add">
+                        新增</button>
+                    <button style="padding: 4px 16px;" id="addchild">
+                        新增子级</button>
+                    <button style="padding: 4px 16px;" id="save">
+                        保存
+                    </button>
+                    <button style="padding: 4px 16px;" id="deletepara">
+                        删除</button>
+                </div>
+                <div id="register">
+                    <div>
+                        <h3>
+                            系统参数信息</h3>
+                    </div>
+                    <div>
+                        <form id="testForm" action="./">
+                        <table class="register-table">
+                            <tr>
+                                <td>
+                                    父参数
+                                </td>
+                                <td>
+                                    <input id="ID" type="hidden" />
+                                    <input id="ParentID" type="hidden" />
+                                    <label id="parentName">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    编码
+                                </td>
+                                <td>
+                                    <input id="Code" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    名称
+                                </td>
+                                <td>
+                                    <input id="Name" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    对应值
+                                </td>
+                                <td>
+                                    <input id="Value" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <span id="IsSystem" style='margin-left: 10px; float: left;'>系统参数</span> <span id="IsEdit"
+                                        style='margin-left: 10px; float: left;'>可编辑</span> <span id="IsDelete" style='margin-left: 10px;
+                                            float: left;'>可删除</span> <span id="IsEnable" style='margin-left: 10px; float: left;'>
+                                                可用</span> <span id="IsCanHasLeaf" style='margin-left: 10px; float: left;'>叶子节点
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    顺序
+                                </td>
+                                <td>
+                                    <input id="OrderNo" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    备注
+                                </td>
+                                <td>
+                                    <textarea id="Note" rows="5"> </textarea>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                    </div>
+                </div>
+                <input type="button" value="保存" id='btnSave' />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

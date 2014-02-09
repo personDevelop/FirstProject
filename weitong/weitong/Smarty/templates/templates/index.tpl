@@ -5,7 +5,8 @@
 
 <title>Smarty</title>   
 </head>   
-<body>   
+<body>  
+<a href="index.php?a=aa&c=sd">asdfsadf</a> 
 {$hello}   
 </body>   
 </html> 

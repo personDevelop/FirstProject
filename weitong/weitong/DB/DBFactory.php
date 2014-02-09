@@ -2,9 +2,31 @@
 header('Content-type:text/html;Charset=utf-8');
 require_once("BaseModule.php");
 require_once("DBConnect.php");
+/**
+ * 数据库访问类
+ * 查询类sql,暂时用完整的select语句，，后续再视情况封装
+ *模糊查询使用如下方式
+ $code='%'.$_POST["searchcode"].'%' ;
+$name='%'.$_POST["searchname"] .'%' ;
+$pagesize=$_POST["pagesize"] ; 
+$result=DbFactory::GetPageData(1,$pagesize,"select * from orderinfo where code like ? and name like  ? ",array($code,$name)); 
+ */
 class DbFactory{
 	
-	/*private $mysqli=false;*/
+	
+	public static function Submit($moudle)
+	{
+		switch	($moudle->_RecordStatus)
+		{
+			case 0:
+				return DbFactory::Insert($moudle);
+				break;
+			case 1:
+				return DbFactory::Update($moudle);
+				break;
+		}
+	}
+	
 	public static function Insert($moudle)
 	{ 
 		
@@ -42,17 +64,18 @@ class DbFactory{
 	public static function Update($moudle){
 		
 		$cloumn="";  
-		$i=0   ;
-		$refs   ;
+		
+		
+		$refs=array()   ;
 		foreach ($moudle->_GetChange() as $name => $value) { 
 			if(!empty($cloumn)){
 				$cloumn.=",";  
 			}
-			$cloumn.=$name;
-			$cloumnholder.="=?" ; 
-			$refs[$i++]= $value;   
+			$cloumn.=$name."=?" ; 
+			$refs[]= $value;   
 		} 
-		$refs[$i]= $moudle->_get($moudle->_PK);   
+		$pk=$moudle->_PK;
+		$refs[]= $moudle->$pk;   
 		$sql=  "UPDATE ".$moudle->TableName." SET  $cloumn  WHERE ".$moudle->_PK."=?";
 		$result= DbFactory:: ExecuteSqlNoQuery($sql,$refs);
 		if($result==1){
@@ -61,22 +84,31 @@ class DbFactory{
 		return $result;
 	} 
 	
+	/**
+	 * This is method UpdateByWhere
+	 *
+	 * @param mixed $moudle This is a description
+	 * @param mixed $where This is a description
+	 * @param mixed $paraArray 没有参数化的为传null
+	 * @return mixed This is the return value description
+	 *
+	 */	 
 	public static function UpdateByWhere($moudle,$where,$paraArray){
 		
 		$cloumn="";  
-		$i=0   ;
-		$refs   ;
+		
+		$refs =array()  ;
 		foreach ($moudle->_GetChange() as $name => $value) { 
 			if(!empty($cloumn)){
 				$cloumn.=",";  
 			}
 			$cloumn.=$name;
 			$cloumnholder.="=?" ; 
-			$refs[$i++]= $value;   
+			$refs[]= $value;   
 		} 
 		foreach($paraArray as $name => $value)
 		{
-			$refs[$i++]= $value;  
+			$refs[]= $value;  
 		} 
 		$sql=  "UPDATE ".$moudle->TableName." SET  $cloumn  WHERE ".$where;
 		$result= DbFactory::ExecuteSqlNoQuery($sql,$refs);
@@ -114,6 +146,15 @@ class DbFactory{
 		}
 		return DbFactory::ExecuteSqlNoQuery($sql,$refs);
 	}
+	/**
+	 * This is method DeleteByWhere*
+	 *
+	 * @param mixed $ClassName This is a description
+	 * @param mixed $where This is a description
+	 * @param mixed $paraArray 没有参数化的为传null
+	 * @return mixed This is the return value description
+	 *
+	 */	
 	public static function DeleteByWhere($ClassName,$where,$paraArray){
 		$refs   ;
 		$tem=new $ClassName();
@@ -145,7 +186,13 @@ class DbFactory{
 	} 
 	
 	
-	
+	/**
+	 * 新增、修改、删除直接执行sql的方式，不推荐，推荐用上述的submit方法,
+	 *
+	 * @param mixed $sql This is a description
+	 * @param mixed $refs 没有参数化的为传null
+	 * @return mixed This is the return value description 
+	 */	
 	public static function ExecuteSqlNoQuery($sql,$refs)
 	{
 		$rowcount=-1;
@@ -182,15 +229,21 @@ class DbFactory{
 		$mysqli->close(); 
 		if($issuccess)
 		{
-			echo $rowcount; 
+			
 			return $rowcount; 
 			
 		} else
-		{  
-			echo $error;
+		{   
 		return $error; }
 	}
 	
+	/**
+	 * 直接执行完整的sql查询，后续再视情况封装
+	 *
+	 * @param mixed $sql This is a description
+	 * @param mixed $refs  没有参数化的为传null
+	 * @return mixed This is the return value description 
+	 */	
 	public static function ExecuteSqlQuery($sql,$refs)
 	{
 		$rowcount=-1;
@@ -242,7 +295,7 @@ class DbFactory{
 		
 		if($issuccess)
 		{
-			echo $rowcount; 
+			
 			return $res; 
 			
 		} else
@@ -252,7 +305,15 @@ class DbFactory{
 	}
 	
 	
-	
+	/**
+	 * 分页查询
+	 *
+	 * @param mixed $currentPage 当前页
+	 * @param mixed $pageSize 每页条数
+	 * @param mixed $sql 查询sql---不用加limit
+	 * @param mixed $paraArray  没有参数化的为传null
+	 * @return mixed This is the return value description 
+	 */	
 	public static function GetPageData($currentPage,$pageSize,$sql,$paraArray )
 	{  
 		/*截取第一个select 和from */ 
@@ -274,7 +335,14 @@ class DbFactory{
 		
 	}
 	
-	
+	/**
+	 * 返回单个字段值
+	 *
+	 * @param mixed $sql This is a description
+	 * @param mixed $paraArray 没有参数化的为传null
+	 * @return mixed This is the return value description
+	 *
+	 */	
 	public static function ExecuteScalar($sql,$paraArray){
 		
 		$result=	DbFactory::	ExecuteSqlQuery($sql,$paraArray);
@@ -285,12 +353,12 @@ class DbFactory{
 		{
 			foreach	($result[0] as $v )
 			{
-				echo "总属性".$v;
+				
 			return $v;}
 		}
 	}
 	
-	 
+	
 	private static function arr2refer($value) {
 		$refs = array();
 		$paramholder="";
@@ -317,11 +385,41 @@ class DbFactory{
 		return $refs;
 	}
 	
-	private  static function GetDataTable($stmts)
+	private  static function GetDataTable($stmt)
 	{
-		$res=array();
-		$field=$stmts->result_metadata()->fetch_fields();
+		$meta = $stmt->result_metadata();   
+		while ($field = $meta->fetch_field())   
+		{   
+			$params[] = &$row[$field->name];   
+		}   
 		
+		call_user_func_array(array($stmt, 'bind_result'), $params);   
+		
+		while ($stmt->fetch()) {   
+			foreach($row as $key => $val)   
+			{   
+				$c[$key] = $val;   
+			}   
+			$result[] = $c;   
+		}   
+		if(isset($result))
+		{
+			return $result;
+		}
+		else
+		{
+			return array();
+		}
+		
+		/*$issuccess->fetch_array( );
+		while($rs =$stmts->store_result()->fetch_array( ))
+		{
+			$rs[]=array();
+		}*/
+		
+		/*
+		$field=$stmts->result_metadata()->fetch_fields();
+				
 		$fields=array();
 		$i=0;
 		$out=array();
@@ -347,9 +445,9 @@ class DbFactory{
 				echo "<pre>";
 				echo $d.'-'.$val.'-'.$j.'-'.$k;
 			}
-		}
+		}*/
 		
-		return $res;
+		//return $res;
 	}
 }
 

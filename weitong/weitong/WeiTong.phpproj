@@ -26,11 +26,11 @@
     {
     "ProjRelPath" = "T"
     }
-    "application\\controllers\\admin"
+    "application\\controllers\\BaseController.php"
     {
     "ProjRelPath" = "T"
     }
-    "application\\controllers\\orderControl.php"
+    "application\\controllers\\ParameterInfoControl.php"
     {
     "ProjRelPath" = "T"
     }
@@ -42,15 +42,11 @@
     {
     "ProjRelPath" = "T"
     }
-    "application\\views"
+    "application\\model\\ParameterInfo.php"
     {
     "ProjRelPath" = "T"
     }
-    "application\\views\\admin"
-    {
-    "ProjRelPath" = "T"
-    }
-    "application\\views\\web"
+    "application\\model\\Tree.php"
     {
     "ProjRelPath" = "T"
     }
@@ -70,10 +66,6 @@
     {
     "ProjRelPath" = "T"
     }
-    "footer.php"
-    {
-    "ProjRelPath" = "T"
-    }
     "global"
     {
     "ProjRelPath" = "T"
@@ -82,19 +74,15 @@
     {
     "ProjRelPath" = "T"
     }
-    "head.php"
-    {
-    "ProjRelPath" = "T"
-    }
     "index.php"
     {
     "ProjRelPath" = "T"
     }
-    "index1.php"
+    "Script"
     {
     "ProjRelPath" = "T"
     }
-    "Script"
+    "Script\\basejs.js"
     {
     "ProjRelPath" = "T"
     }
@@ -170,6 +158,14 @@
     {
     "ProjRelPath" = "T"
     }
+    "Script\\img\\arrowdown.gif"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\img\\close.png"
+    {
+    "ProjRelPath" = "T"
+    }
     "Script\\img\\folder.png"
     {
     "ProjRelPath" = "T"
@@ -179,6 +175,10 @@
     "ProjRelPath" = "T"
     }
     "Script\\img\\folderOpen.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "Script\\img\\help.png"
     {
     "ProjRelPath" = "T"
     }
@@ -1378,6 +1378,10 @@
     {
     "ProjRelPath" = "T"
     }
+    "Script\\styles\\wt.base.css"
+    {
+    "ProjRelPath" = "T"
+    }
     "Smarty"
     {
     "ProjRelPath" = "T"
@@ -1906,15 +1910,27 @@
     {
     "ProjRelPath" = "T"
     }
+    "view\\admin\\JScript1.js"
+    {
+    "ProjRelPath" = "T"
+    }
     "view\\admin\\main.html"
     {
     "ProjRelPath" = "T"
     }
-    "view\\HTML Page1.html"
+    "view\\admin\\ParameterInfoPage.html"
     {
     "ProjRelPath" = "T"
     }
     "view\\web"
+    {
+    "ProjRelPath" = "T"
+    }
+    "view\\web\\footer.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "view\\web\\head.php"
     {
     "ProjRelPath" = "T"
     }
