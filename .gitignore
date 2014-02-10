@@ -12,3 +12,5 @@ obj/
 _ReSharper*/
 *.conf
 *.ini
+weitong/weitong/.httpd.conf
+weitong/weitong/php.ini
