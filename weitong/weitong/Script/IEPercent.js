@@ -9,5 +9,6 @@ function getPercent(percet, parent ) {
             return real ;
         }
 
-   
-}
+
+    }
+/*Ìí¼Ó×¢ÊÍ*/
