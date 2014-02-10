@@ -10,3 +10,5 @@ Thunbs.db
 obj/
 [Rr]elease*/
 _ReSharper*/
+*.conf
+*.ini
