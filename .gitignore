@@ -3,15 +3,10 @@ Thunbs.db
 *.exe
 *.conf
 *.ini
-*.suo
-*.phpproj
-*.puo
+*.suo merge=union
+*.phpproj merge=union
+*.puo merge=union
 *.intellisense.cache
 obj/
 [Rr]elease*/
 _ReSharper*/
-*.conf
-*.ini
-weitong/weitong/.httpd.conf
-weitong/weitong/php.ini
-weitong/weitong/.httpd.conf
