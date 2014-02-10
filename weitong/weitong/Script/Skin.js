@@ -1,4 +1,4 @@
- 
+﻿ 
 var themes = [
         { label: 'Arctic', group: 'Themes', value: 'arctic' },
         { label: 'Web', group: 'Themes', value: 'web' },

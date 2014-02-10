@@ -11,4 +11,4 @@ function getPercent(percet, parent ) {
 
 
     }
-/*添加注释3*/
+    /*sdasdf*/
