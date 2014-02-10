@@ -1910,11 +1910,31 @@
     {
     "ProjRelPath" = "T"
     }
+    "view\\admin\\css"
+    {
+    "ProjRelPath" = "T"
+    }
+    "view\\admin\\css\\images"
+    {
+    "ProjRelPath" = "T"
+    }
+    "view\\admin\\css\\images\\logo.png"
+    {
+    "ProjRelPath" = "T"
+    }
+    "view\\admin\\css\\images\\skin_icons.png"
+    {
+    "ProjRelPath" = "T"
+    }
     "view\\admin\\JScript1.js"
     {
     "ProjRelPath" = "T"
     }
     "view\\admin\\main.html"
+    {
+    "ProjRelPath" = "T"
+    }
+    "view\\admin\\main1.html"
     {
     "ProjRelPath" = "T"
     }
