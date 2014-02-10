@@ -1,6 +1,12 @@
 Thunbs.db
 *.obj
 *.exe
+*.httpd.conf
+php.ini
+*.suo
+WeiTong.intellisense.cache
+WeiTong.phpproj
+WeiTong.puo
 obj/
 [Rr]elease*/
 _ReSharper*/
