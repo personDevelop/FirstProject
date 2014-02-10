@@ -29,7 +29,7 @@ function initthemes() {
     var loadedThemes = [0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
 
     var me = this;
-    //ÉèÖÃÄ¬ÈÏÆ¤·ô£¬ ´ÓcookieÈ¡Öµ
+    //è®¾ç½®é»˜è®¤çš®è‚¤ï¼Œ ä»cookieå–å€¼
     selectedTheme = $.jqx.cookie.cookie('shinTheme');
     if (!selectedTheme) {
         selectedTheme = 'ui-sunny'; 

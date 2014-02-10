@@ -11,4 +11,4 @@ function getPercent(percet, parent ) {
 
 
     }
-/*Ìí¼Ó×¢ÊÍ*/
+/*æ·»åŠ æ³¨é‡Š3*/
