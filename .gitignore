@@ -3,7 +3,7 @@ Thunbs.db
 *.exe
 *.conf
 *.ini
-*.suo merge=union
+*.suo
 *.phpproj merge=union
 *.puo merge=union
 *.intellisense.cache
