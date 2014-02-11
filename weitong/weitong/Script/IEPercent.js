@@ -10,5 +10,4 @@ function getPercent(percet, parent ) {
         }
 
 
-    }
-    /*sdasdf*/
+    } 
