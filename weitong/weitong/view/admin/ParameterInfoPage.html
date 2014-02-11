@@ -6,15 +6,13 @@
     <title>系统参数设置</title>
     <link rel="stylesheet" id="basecss" href="../../Script/styles/jqx.base.css" type="text/css" />
     <script type="text/javascript" src="../../Script/jquery-1.10.2.min.js"></script>
-  
     <script type="text/javascript" src="../../Script/jqxcore.js"></script>
     <script type="text/javascript" src="../../Script/jqx-all.js"></script>
-    <script type="text/javascript" src="JScript1.js"></script>
     <script type="text/javascript" src="../../Script/Skin.js"></script>
     <script type="text/javascript" src="../../Script/basejs.js"></script>
     <script type="text/javascript" src="../../Script/IEPercent.js"></script>
     <script type="text/javascript">
-        SetTheme();//设置皮肤
+        SetTheme(); //设置皮肤
         var isAddRoot = true;
         var tree;
         var _RecordStatus = 0;
@@ -82,7 +80,7 @@
                 width: '100%', panels: [{ size: '20%' }, { size: '60%'}]
             });
             $('#IsCanHasLeaf,#IsSystem,#IsEdit,#IsDelete,#IsEnable').jqxCheckBox();
-            $("#Note").jqxInput({width:'200px'});
+            $("#Note").jqxInput({ width: '200px' });
             $("#jqxWidget").jqxButtonGroup({ mode: 'default' }).on('buttonclick', function (event) {
                 var clickedButton = event.args.button[0].id;
 
@@ -334,7 +332,6 @@
                                 </td>
                                 <td>
                                     <textarea id="Note" rows="5"> </textarea>
-                                    
                                 </td>
                             </tr>
                         </table>
