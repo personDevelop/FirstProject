@@ -34,6 +34,10 @@
     {
     "ProjRelPath" = "T"
     }
+    "application\\controllers\\wxindex.php"
+    {
+    "ProjRelPath" = "T"
+    }
     "application\\model"
     {
     "ProjRelPath" = "T"
@@ -1951,6 +1955,10 @@
     "ProjRelPath" = "T"
     }
     "view\\web\\head.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "weixin.php"
     {
     "ProjRelPath" = "T"
     }
