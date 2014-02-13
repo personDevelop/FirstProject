@@ -42,6 +42,10 @@
     {
     "ProjRelPath" = "T"
     }
+    "application\\model\\KeyWordMsg.php"
+    {
+    "ProjRelPath" = "T"
+    }
     "application\\model\\OrderInfo_class.php"
     {
     "ProjRelPath" = "T"
@@ -51,6 +55,14 @@
     "ProjRelPath" = "T"
     }
     "application\\model\\Tree.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\model\\WXMenu.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "application\\model\\WXMsgInfo.php"
     {
     "ProjRelPath" = "T"
     }
